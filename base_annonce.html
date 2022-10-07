@@ -22,6 +22,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="manifest" href="assets/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
@@ -64,7 +65,7 @@
                     <span>Home</span>
                 </li>
                 <li class="breadcrumb-item">
-                    <span>Base</span>
+                    <span>Bases</span>
                 </li>
                 <li class="breadcrumb-item active">
                     <span>Annonces</span>
@@ -72,6 +73,188 @@
             </ol>
         </nav>
     </div>
+    <div class="body flex-grow-1 px-3">
+        <h1>Bases annonces</h1>
+        <h4>Filtre de recherche</h4>
+        <div class="row g-6">
+            <div class="col md-8 order-md-1">
+                <form class="row">
+                    <div class="col-md-3">
+                        <label for="inputEmail4" class="form-label">Surface bien</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="77 m²">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputState" class="form-label">Nombre pièces</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5+</option>
+                        </select>
+                    </div>
+        
+                    <div class="col-md-2">
+                        <label for="inputPassword4" class="form-label">Prix minimun</label>
+                        <input type="number" class="form-control" id="inputPassword4" placeholder="0">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputPassword4" class="form-label">Prix maximum</label>
+                        <input type="number" class="form-control" id="inputPassword4" placeholder="100 000">
+                    </div>
+        
+                    <div class="col-md-3">
+                        <label for="inputAddress" class="form-label">Numéro référencement</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="exemple@mail.com">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="inputCity" class="form-label">Ville</label>
+                        <input type="text" class="form-control" id="inputCity" placeholder="Bordeaux">
+                    </div>
+        
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">Département</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+        
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Code postal</label>
+                        <input type="text" class="form-control" id="inputZip" placeholder="33000">
+                    </div>
+        
+                    <div class="col-12 mt-3">
+                        <button type="submit" class="btn btn-primary">Chercher</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row g-6">
+            <h4 class="mt-5">Liste annonces</h4>
+            <table class="table">
+                <thead>
+                    <td>Id</td>
+                    <td>Adresse</td>
+                    <td>Nombre de pièces</td>
+                    <td>Prix</td>
+                    <td>Surface</td>
+                    <td>Modifier</td>
+                    <td>Voir</td>
+                </thead>
+                <tbody>
+                    <tr class="table-active">
+                        <td>1</td>
+                        <td>7 route du terrier, 33000 Bordeaux</td>
+                        <td>5</td>
+                        <td>100 000 €</td>
+                        <td>92m²</td>
+                        <td><a class="btn btn-secondary" href="#"><i class="fa-solid fa-pen"></i></a></td>
+                        <td><a class="btn btn-secondary" href="#"><i class="fa-solid fa-eye"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>7 route du terrier, 33000 Bordeaux</td>
+                        <td>5</td>
+                        <td>100 000 €</td>
+                        <td>92m²</td>
+                        <td><a class="btn btn-secondary" href="#"><i class="fa-solid fa-pen"></i></a></td>
+                        <td><a class="btn btn-secondary" href="#"><i class="fa-solid fa-eye"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>7 route du terrier, 33000 Bordeaux</td>
+                        <td>5</td>
+                        <td>100 000 €</td>
+                        <td>92m²</td>
+                        <td><a class="btn btn-secondary" href="#"><i class="fa-solid fa-pen"></i></a></td>
+                        <td><a class="btn btn-secondary" href="#"><i class="fa-solid fa-eye"></i></a></td>
+                    </tr>
+                    <tr class="table-active">
+                        <td>1</td>
+                        <td>7 route du terrier, 33000 Bordeaux</td>
+                        <td>5</td>
+                        <td>100 000 €</td>
+                        <td>92m²</td>
+                        <td><a class="btn btn-secondary" href="#"><i class="fa-solid fa-pen"></i></a></td>
+                        <td><a class="btn btn-secondary" href="#"><i class="fa-solid fa-eye"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>7 route du terrier, 33000 Bordeaux</td>
+                        <td>5</td>
+                        <td>100 000 €</td>
+                        <td>92m²</td>
+                        <td><a class="btn btn-secondary" href="#"><i class="fa-solid fa-pen"></i></a></td>
+                        <td><a class="btn btn-secondary" href="#"><i class="fa-solid fa-eye"></i></a></td>
+                    </tr>
+                    <tr class="table-active">
+                        <td>1</td>
+                        <td>7 route du terrier, 33000 Bordeaux</td>
+                        <td>5</td>
+                        <td>100 000 €</td>
+                        <td>92m²</td>
+                        <td><a class="btn btn-secondary" href="#"><i class="fa-solid fa-pen"></i></a></td>
+                        <td><a class="btn btn-secondary" href="#"><i class="fa-solid fa-eye"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>7 route du terrier, 33000 Bordeaux</td>
+                        <td>5</td>
+                        <td>100 000 €</td>
+                        <td>92m²</td>
+                        <td><a class="btn btn-secondary" href="#"><i class="fa-solid fa-pen"></i></a></td>
+                        <td><a class="btn btn-secondary" href="#"><i class="fa-solid fa-eye"></i></a></td>
+                    </tr>
+                    <tr class="table-active">
+                        <td>1</td>
+                        <td>7 route du terrier, 33000 Bordeaux</td>
+                        <td>5</td>
+                        <td>100 000 €</td>
+                        <td>92m²</td>
+                        <td><a class="btn btn-secondary" href="#"><i class="fa-solid fa-pen"></i></a></td>
+                        <td><a class="btn btn-secondary" href="#"><i class="fa-solid fa-eye"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>7 route du terrier, 33000 Bordeaux</td>
+                        <td>5</td>
+                        <td>100 000 €</td>
+                        <td>92m²</td>
+                        <td><a class="btn btn-secondary" href="#"><i class="fa-solid fa-pen"></i></a></td>
+                        <td><a class="btn btn-secondary" href="#"><i class="fa-solid fa-eye"></i></a></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
+                    </li>
+
+                    <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
     
     </div>
