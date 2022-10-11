@@ -57,245 +57,76 @@
 <body>
     <div data-include="slidebar" class="sidebar sidebar-dark sidebar-fixed" id="sidebar"></div>
 
-    <div class="wrapper d-flex flex-column min-vh-100 bg-light">
-    <header data-include="header" class="header header-sticky mb-4"></header>
-    <div class="header-divider"></div>
-    <div class="container-fluid">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb my-0 ms-2">
-                <li class="breadcrumb-item">
-                    <span>Home</span>
-                </li>
-                <li class="breadcrumb-item active">
-                    <span>Chat/Appel</span>
-                </li>
-            </ol>
-        </nav>
-    </div>
-
-    <div class="body flex-grow-1 px-3">
-        <div class="container bootstrap snippets bootdey mt-3">
-            <div style="max-height: 100vh;" class="row">
-                <i onclick="ActiveGroup()" id="btn-close" class="fa-solid fa-xmark close"></i>
-                <div id="Group" class="col-md-4 bg-white ">
-                    <div class="row border-bottom padding-sm" style="height: 60px;">
-                        <div style="height: 40px;" class="input-group">
-                            <div class="form-outline">
-                                <input id="search-input" type="search" id="form1" class="form-control" placeholder="Search.." />
-                            </div>
-                            <button style="height: 90%;" id="search-button" type="button" class="btn btn-primary">
-                                <i class="fas fa-search"></i>
-                            </button>
+    <div class="wrapper d-flex flex-column min-vh-100 bg-item">
+        <header data-include="header" class="header header-sticky mb-4"></header>
+        <div class="header-divider"></div>
+        <div class="container-fluid">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb my-0 ms-2">
+                    <li class="breadcrumb-item">
+                        <span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        <span>Chat/Appel</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        <div class="body flex-grow-1 px-3">
+            <h1>Chat et appel</h1>
+            <h4>Recherche contact</h4>
+            <div class="row g-6">
+                <div class="col md-8">
+                    <form class="row">
+                        <div class="col-md-3">
+                            <label for="inputEmail4" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="inputEmail4" placeholder="Nom..">
                         </div>
-                    </div>
-                    
-                    <!-- =============================================================== -->
-                    <!-- member list -->
-                    <ul class="friend-list">
-                        <li class="active bounceInDown">
-                            <a href="#" class="clearfix">
-                                <img src="https://bootdey.com/img/Content/user_1.jpg" alt="" class="img-circle">
-                                <div class="friend-name">	
-                                    <strong>John Doe</strong>
-                                </div>
-                                <div class="last-message text-muted">Hello, Are you there?</div>
-                                <small class="time text-muted">Just now</small>
-                                <small class="chat-alert label label-danger">1</small>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="clearfix">
-                                <img src="https://bootdey.com/img/Content/user_2.jpg" alt="" class="img-circle">
-                                <div class="friend-name">	
-                                    <strong>Jane Doe</strong>
-                                </div>
-                                <div class="last-message text-muted">Lorem ipsum dolor sit amet.</div>
-                                <small class="time text-muted">5 mins ago</small>
-                            <small class="chat-alert text-muted"><i class="fa fa-check"></i></small>
-                            </a>
-                        </li> 
-                        <li>
-                            <a href="#" class="clearfix">
-                                <img src="https://bootdey.com/img/Content/user_3.jpg" alt="" class="img-circle">
-                                <div class="friend-name">	
-                                    <strong>Kate</strong>
-                                </div>
-                                <div class="last-message text-muted">Lorem ipsum dolor sit amet.</div>
-                                <small class="time text-muted">Yesterday</small>
-                                <small class="chat-alert text-muted"><i class="fa fa-reply"></i></small>
-                            </a>
-                        </li>  
-                        <li>
-                            <a href="#" class="clearfix">
-                                <img src="https://bootdey.com/img/Content/user_1.jpg" alt="" class="img-circle">
-                                <div class="friend-name">	
-                                    <strong>Kate</strong>
-                                </div>
-                                <div class="last-message text-muted">Lorem ipsum dolor sit amet.</div>
-                                <small class="time text-muted">Yesterday</small>
-                                <small class="chat-alert text-muted"><i class="fa fa-reply"></i></small>
-                            </a>
-                        </li>     
-                        <li>
-                            <a href="#" class="clearfix">
-                                <img src="https://bootdey.com/img/Content/user_2.jpg" alt="" class="img-circle">
-                                <div class="friend-name">	
-                                    <strong>Kate</strong>
-                                </div>
-                                <div class="last-message text-muted">Lorem ipsum dolor sit amet.</div>
-                                <small class="time text-muted">Yesterday</small>
-                                <small class="chat-alert text-muted"><i class="fa fa-reply"></i></small>
-                            </a>
-                        </li>        
-                        <li>
-                            <a href="#" class="clearfix">
-                                <img src="https://bootdey.com/img/Content/user_6.jpg" alt="" class="img-circle">
-                                <div class="friend-name">	
-                                    <strong>Kate</strong>
-                                </div>
-                                <div class="last-message text-muted">Lorem ipsum dolor sit amet.</div>
-                                <small class="time text-muted">Yesterday</small>
-                                <small class="chat-alert text-muted"><i class="fa fa-reply"></i></small>
-                            </a>
-                        </li>          
-                        <li>
-                            <a href="#" class="clearfix">
-                                <img src="https://bootdey.com/img/Content/user_5.jpg" alt="" class="img-circle">
-                                <div class="friend-name">	
-                                    <strong>Kate</strong>
-                                </div>
-                                <div class="last-message text-muted">Lorem ipsum dolor sit amet.</div>
-                                <small class="time text-muted">Yesterday</small>
-                                <small class="chat-alert text-muted"><i class="fa fa-reply"></i></small>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="clearfix">
-                                <img src="https://bootdey.com/img/Content/user_2.jpg" alt="" class="img-circle">
-                                <div class="friend-name">	
-                                    <strong>Jane Doe</strong>
-                                </div>
-                                <div class="last-message text-muted">Lorem ipsum dolor sit amet.</div>
-                                <small class="time text-muted">5 mins ago</small>
-                            <small class="chat-alert text-muted"><i class="fa fa-check"></i></small>
-                            </a>
-                        </li>                 
-                    </ul>
+                        <div class="col-md-3">
+                            <label for="inputEmail4" class="form-label">Prénom</label>
+                            <input type="text" class="form-control" id="inputEmail4" placeholder="Prénom..">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="inputEmail4" class="form-label">Numéro téléphone</label>
+                            <input type="text" class="form-control" id="inputEmail4" placeholder="0606060606">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <button type="submit" class="btn btn-primary">Chercher</button>
+                        </div>
+                    </form>
                 </div>
-                <i id="btn-group" onclick="ActiveGroup()" class="fa-solid fa-user-group group"></i>
-                <div id="chat" class="col-md-8 bg-white">
-                    
-                    <div class="chat-message" style="overflow-y: scroll; max-height: 80vh;">
-                        <ul class="chat">
-                            <li class="left clearfix">
-                                <span class="chat-img pull-left">
-                                    <img src="https://bootdey.com/img/Content/user_3.jpg" alt="User Avatar">
-                                </span>
-                                <div class="chat-body clearfix">
-                                    <div class="header">
-                                        <strong class="primary-font">John Doe</strong>
-                                        <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="right clearfix">
-                                <span class="chat-img pull-right">
-                                    <img src="https://bootdey.com/img/Content/user_1.jpg" alt="User Avatar">
-                                </span>
-                                <div class="chat-body clearfix">
-                                    <div class="header">
-                                        <strong class="primary-font">Sarah</strong>
-                                        <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales at. 
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="left clearfix">
-                                <span class="chat-img pull-left">
-                                    <img src="https://bootdey.com/img/Content/user_3.jpg" alt="User Avatar">
-                                </span>
-                                <div class="chat-body clearfix">
-                                    <div class="header">
-                                        <strong class="primary-font">John Doe</strong>
-                                        <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="right clearfix">
-                                <span class="chat-img pull-right">
-                                    <img src="https://bootdey.com/img/Content/user_1.jpg" alt="User Avatar">
-                                </span>
-                                <div class="chat-body clearfix">
-                                    <div class="header">
-                                        <strong class="primary-font">Sarah</strong>
-                                        <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales at. 
-                                    </p>
-                                </div>
-                            </li>                    
-                            <li class="left clearfix">
-                                <span class="chat-img pull-left">
-                                    <img src="https://bootdey.com/img/Content/user_3.jpg" alt="User Avatar">
-                                </span>
-                                <div class="chat-body clearfix">
-                                    <div class="header">
-                                        <strong class="primary-font">John Doe</strong>
-                                        <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="right clearfix">
-                                <span class="chat-img pull-right">
-                                    <img src="https://bootdey.com/img/Content/user_1.jpg" alt="User Avatar">
-                                </span>
-                                <div class="chat-body clearfix">
-                                    <div class="header">
-                                        <strong class="primary-font">Sarah</strong>
-                                        <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales at. 
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="right clearfix">
-                                <span class="chat-img pull-right">
-                                    <img src="https://bootdey.com/img/Content/user_1.jpg" alt="User Avatar">
-                                </span>
-                                <div class="chat-body clearfix">
-                                    <div class="header">
-                                        <strong class="primary-font">Sarah</strong>
-                                        <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
-                                    </div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales at. 
-                                    </p>
-                                </div>
-                            </li>                    
-                        </ul>
-                    </div>
-                    <div class="chat-box bg-white">
-                        <div class="input-group">
-                            <input class="form-control border no-shadow no-rounded" placeholder="Type your message here">
-                            <span class="input-group-btn">
-                                <button class="btn btn-success no-rounded" type="button">Send</button>
-                            </span>
-                        </div><!-- /input-group -->	
-                    </div>            
-                </div>        
+                <h4 class="mt-4">Mes conversattions</h4>
+                <ol class="list-group list-group-light">
+                    <a href="?#">
+                        <li class="list-group-item d-flex justify-content-between align-items-start active">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Jason Doe</div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero consequatur laboriosam ipsa dicta beatae corrupti asperiores veritatis optio sunt! Nostrum quia voluptates voluptas laborum quisquam amet assumenda quam itaque?</p>
+                            </div>
+                            <span class="badge badge-danger rounded-pill">2</span>
+                        </li>
+                    </a>
+
+                    <a href="?#">
+                        <li class="list-group-item d-flex justify-content-between align-items-start active">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Tessa Gray</div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit itaque totam dolores quas hic soluta sit qui, obcaecati quia est excepturi facilis quibusdam! Odit porro molestiae, eveniet at ut ipsum.</p>
+                            </div>
+                            <span class="badge badge-primary rounded-pill">3</span>
+                        </li>
+                    </a>
+
+                    <a href="?#">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Patrick Groder</div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut debitis consequatur iusto possimus adipisci hic natus aliquam, quod cum at minima velit corrupti assumenda quos laborum nisi quam sapiente quae?</p>
+                            </div>
+                            <span class="badge badge-primary rounded-pill">14</span>
+                        </li>
+                    </a>
+                </ol>
             </div>
         </div>
     </div>
@@ -303,13 +134,11 @@
         <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> © 2022 creativeLabs.</div>
         <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/docs/">CoreUI UI Components</a></div>
     </footer>
-    </div>
     <!-- CoreUI and necessary plugins-->
     <script src="vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
     <script src="vendors/simplebar/js/simplebar.min.js"></script>
     <script>
         
     </script>
-
 </body>
 </html>
